@@ -1,0 +1,61 @@
+Meta
+100
+Easy-Medium
+"Do you want to play a game?" - A mysterious voice echoed in your computer. You think you've been hacked. Suddenly, a file named "game.docx" appears on your desktop. You open it and find a riddle inside:
+
+"The code is hidden in plain sight," the riddle reads.
+
+author: BbayuGt
+meta.docx
+
+Secret File
+100
+Flag nya ada di dalem zip :)
+
+author: Cyrus
+
+secfile
+
+Sound
+100
+Suara suara unik.
+
+Flag format : FORESTY{plain-text}
+
+Author : Cyrus
+
+suara apa tu
+
+Tutut
+100
+Jujur, basic foren
+
+author: archanist
+
+chall.mp4
+
+Cropped Top
+350
+Easy banget asli no fek fek
+Tim Digital Forensics mendapatkan surat cinta dari Hengker jahat, tetapi setelah ditelusuri lebih lanjut, sepertinya file itu menyimpan sebuah rahasia, tolong bantu tim pembaik memecahkan teka-tekinya.
+
+author: sn0wden
+
+chall.pdf
+
+
+Wallet
+480
+Hard
+Seorang dosen sadar bahwa devicenya sedang terkena ransomeware, karna ia panik maka ia langsung men-dump datanya menjadi disk image, namun ia lupa dimana ia menaruh backup passphrase dari wallet cryptonya, tolong bantu dosen backup passphrasenya untuk dapet TAK!!
+
+Download Challenge Attachment : https://drive.google.com/drive/folders/1bnSF_W6HrKSCiegmeSHspoAsJRFX1SPW?usp=sharing
+
+pw : f0r3sty3m4s2025g44c0000rk@n9!
+
+NB : flag berupa mnemonic phrase yang terdiri dari 12 kata.
+
+Contoh flag: FORESTY{boy_head_tuna_delay_index_smart_reason_beach_ december_diesel_wasp_help}
+
+author: sn0wden
+

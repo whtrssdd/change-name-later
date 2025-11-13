@@ -1,0 +1,53 @@
+Atmin
+100
+Easy-Medium
+Atmin dimana wok
+
+Gunakan plus code google Contoh:
+
+FORESTY{2JJH+77 Sukapura, Kabupaten Bandung, Jawa Barat}
+
+FORESTY{2JJH+77}
+author: BbayuGt
+
+:3
+attch
+
+Serlok
+100
+Easy
+challl.jpeg
+
+Si bro ingin sekali pergi bersama temannya untuk bermain billiard bersama, namun ia baru pertama kali nongkrong (touch grass 'ahh) dan belum tau tempatnya, namun temannya sudah mengirimkan lokasinya di aplikasi messenger, namun tiba-tiba ia tersesat di tengah jalan karena kuotanya tiba-tiba habis, untungnya temannya sudah mengirimkan foto lokasinya kepada si bro, bantulah si bro untuk menemukan lokasinya hanya dari foto yang dikirim oleh temannya.
+
+Contoh flag : FORESTY{telsec_billiard}
+
+author: sn0wden
+challjpeg
+
+Atmin Lagi
+100
+Easy
+Atmin kemana sih gajelas banget
+
+Gunakan plus code Google
+
+Contoh
+
+FORESTY{2JJH+77 Sukapura, Kabupaten Bandung, Jawa Barat}
+
+FORESTY{2JJH+77} juga bisa
+NOTE: Gunakan plus code pada struktur terdekat dari tempat Atmin mengambil foto (Contoh: Gedung, menara, mall, yang ada di label di Google)!
+
+author: BbayuGt
+c06
+
+Thr34t_4ct0r
+460
+Medium-Hard
+Pada tanggal 2 maret 2025, terdapat sebuah kebocoran data pada Menara Imperium Business Center yang menyebarkan 4.47GB data perusahan, postingan tersebut di upload oleh user LordVoldemort pada darkweb “BreachForums”. Tolong bantu tim intelijen kepolisian untuk mengungkap siapa dibalik akun tersebut.
+
+Contoh flag : FORESTY{namapanjangpelaku}
+
+author: sn0wden
+

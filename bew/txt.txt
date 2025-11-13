@@ -1,0 +1,66 @@
+Restricted Area
+100
+Baby
+Challange web aku mah gampang gak kayak yang lain huft.
+
+author: Cyrus
+
+https://baby-web-challenge.ctf.forestylab.com/
+
+iHGracias
+100
+easy-medium
+Gara-gara ada kebocoran data di iHGracias, tim PuTI (Pusat Teknologi Informasi) jadi pusing tujuh keliling! Katanya sih, ada 'hacker' iseng yang berhasil masuk dan ngacak-ngacak data mahasiswa. Jejak digitalnya aneh banget, kayaknya dia bisa liat data mahasiswa lain cuma modal ganti-ganti "angka" di URL. Masa iya segampang itu? Coba deh kamu jadi detektif dadakan dan selidiki kasus ini. Siapa tahu kamu bisa nemuin 'harta karun' yang ditinggalin si hacker!
+
+author: Tyzals
+
+https://igracias-telkomuniversity-ac-id.ctf.forestylab.com/
+
+Injection
+140
+easy-medium
+tim intel kita nemu satu layanan ping pemerintah yang kayaknya dibuat sambil ngantuk buru-buru, seadanya, dan penuh misteri. jadi tugas lo simpel: masukin diri lewat halaman login, jelajahi fiturnye, terus ulik server buat ngintip data yang katanya disimpen rapih.
+
+Gak usah maksain brute force - pinterin observasi ama literasi modul Pengenalan Intel Bagian Top 10.
+
+author: Tyzals
+
+https://government-ping-service.ctf.forestylab.com/
+
+Toko Bendera
+460
+Medium-hard
+Selamat merayakan hari kemerdekaan Republik Indonesia! Silahkan beli bendera di toko kami!
+
+NB: Untuk sementara waktu, kita tidak menerima pesanan bendera anime.
+
+(Ini mah nyolong challenge sebelah njir)
+
+author: bbayugt
+
+Note: Tidak perlu menggunakan reverse shell
+
+https://toko-bendera.ctf.forestylab.com/
+chall.zip
+
+hint1
+https://positive.security/blog/dompdf-rce
+hint2
+lokasi dompdf pada docker: /app/dompdf/
+
+lokasi index.php /app/index.php
+
+Aphids 6609
+470
+Easy-Medium
+Pada forum 4-chan, ada sebuah pesan random yang diberikan oleh seorang anonim, "Kita mencari orang yang mampu menyelesaikan tantangan ini". Awalnya, pesan tersebut terlihat seperti sebuah tantangan yang tidak berarti. Namun, setelah ditelusuri lebih lanjut, ternyata ada sebuah kode tersembunyi di dalamnya. Kode tersebut mengarah pada sebuah halaman yang berisi sebuah tantangan yang harus diselesaikan.
+
+author: bbayugt
+
+https://aphids-6609.ctf.forestylab.com/
+hint1
+Ini soal gampang, jangan overthinking plis
+hint2
+Have you checked the "Sources" tab on your dev tool?
+hint3
+You need to read them, you couldn't? Try harder! Find something, there must be SOMETHING you can do to read

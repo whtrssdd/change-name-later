@@ -1,0 +1,46 @@
+RSA Shared Prime
+110
+Dua kunci publik RSA terlihat berbeda, tapi ternyata mereka punya sesuatu yang sama…
+Temukan celahnya dan kembalikan plaintext yang tersembunyi di ciphertext.
+
+File yang disediakan:
+
+public/pubkey1.pem
+public/pubkey2.pem
+public/ciphertext.hex
+
+
+Operation FORESTY - Macam-Macam Tipe Enkripsi Klasik
+440
+Medium-Hard
+FORESTY - Forensic and Security Laboratory - sedang melakukan simulasi CTF untuk calon anggota Study Group 2025. Dalam salah satu chall, sebuah pesan penting telah dikunci menggunakan enkripsi berlapis enam yang seluruhnya menggunakan teknik kriptografi klasik.
+
+Diketahui pesan terenkripsi sebagai berikut:
+
+GAHQCMCVFWJUAIDEISRZWTMUCUJUSFDMYIGP
+
+Flag format: FORESTY{x_x_x_x_x}
+
+author: Tyzals
+
+hint 1 
+Di salah satu buku catatan lama FORESTY, kamu menemukan halaman penuh coretan tangan—jelas ditulis oleh analis senior yang pernah menggunakan metode ini bertahun-tahun lalu.
+
+Isi halamannya berbunyi:
+
+“Lapisan terluar dilindungi oleh putaran alfabet kuno— tepat 13 langkah dari huruf asalnya.”
+
+“Di bawahnya, ada susunan huruf kustom yang dibangun dari nama laboratorium ini sendiri: FORESTY.”
+
+“Lapisan berikut menjaga integritas data, dijaga oleh empat huruf yang selalu dipakai saat memverifikasi berkas: HASH.”
+
+“Selanjutnya terdapat fungsi linier klasik, dengan pasangan nilai a = 3 dan b = 5 sebagai kuncinya.”
+
+“Lebih dalam lagi tersembunyi struktur kotak 2×2, berisi angka-angka: [ 7 8;  11 11 ] sebuah peninggalan dari eksperimen kriptografi lama.”
+
+“Dan sebelum semua lapisan itu, dasar penyandian dimulai dari penyusunan kolom, yang diatur oleh sebuah kata kunci: TRAFFIC.”
+
+hint 2
+https://www.cyberacademy.id/belajar-online/classical-cryptography-for-beginner
+
+hint 3 unlock for 100p

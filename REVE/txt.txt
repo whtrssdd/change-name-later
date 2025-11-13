@@ -1,0 +1,24 @@
+Ini challenge reverse?
+100
+Baby
+Harusnya sih challenge reverse, tapi kok
+
+author: BbayuGt
+chall
+
+byte-circus
+100
+ezpz
+
+script.cpython-313.pyc
+
+author: ooflamp
+
+Baby Reveng
+170
+Easy
+This program is cute and simple. It just prints some random numbers. Can you find the flag?
+
+author: BbayuGt :3
+
+baby rev

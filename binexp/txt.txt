@@ -1,0 +1,30 @@
+pemanasan-1
+240
+Easy-Medium
+inimah loncat loncat doang
+
+author: ooflamp
+
+ncat -v pemanasan-1.ctf.forestylab.com 5000 --ssl
+run
+
+Baby pwn
+260
+Baby
+A very secure system indeed
+
+author: BbayuGt
+
+ncat babypwn.ctf.forestylab.com 5000 --ssl
+chall
+
+Karbit Checker
+330
+Easy
+Yang karbit karbit ajah
+
+author: BbayuGt
+
+ncat bitkarbit.ctf.forestylab.com 5000 --ssl
+Flag
+karbit
