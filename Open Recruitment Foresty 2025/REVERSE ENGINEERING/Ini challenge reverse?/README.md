@@ -1,28 +1,41 @@
-# [Reverse Engineering] makeitsimple
+# 🔍 [Reverse Engineering] ini chal reverse
 
-| Info Challenge | Detail |
+[![Status Solusi](https://img.shields.io/badge/Status-Solved-success)]()
+[![Poin Challenge](https://img.shields.io/badge/Poin-190-orange)]()
+[![Kategori](https://img.shields.io/badge/Kategori-Reverse_Engineering-red)]()
+
+> **Path Solusi:** `oprecforesty2025/reverse engineering/ini chal reverse/`
+
+## 💡 Informasi Challenge
+
+| Detail | Nilai |
 | :--- | :--- |
-| **Nama CTF** | Foresty CTF 2024 (Contoh) |
-| **Kategori** | Reverse Engineering |
+| **Event CTF** | Oprec Foresty 2025 |
 | **Poin** | 190 |
-| **Kesulitan** | Baby |
+| **Kesulitan** | Baby (Mudah) |
 | **Author** | BbayuGt |
+| **Deskripsi** | Ini challenge reverse? Harusnya sih challenge reverse, tapi kok... |
 
-> Deskripsi Asli Challenge: "Ini challenge reverse? Harusnya sih challenge reverse, tapi kok..."
-
-## 💡 Deskripsi Solusi
-
-Challenge ini adalah sebuah biner (binary executable) yang terlihat seperti *Reverse Engineering*, tetapi solusinya jauh lebih sederhana dan cepat.
-
-Kerentanan utama terletak pada **String tersembunyi** yang ada di dalam biner itu sendiri, yang ternyata adalah *flag* yang valid.
+## 🧩 File yang Diberikan
+-   `chall`: File biner (executable) berarsitektur x86-64.
 
 ---
 
-## 🛠️ Langkah-Langkah Solusi
+## 🧠 Teknik dan Kerentanan
 
-### 1. Analisis Awal (Strings)
-Awalnya, dilakukan analisis dasar pada biner `chall` untuk mencari string yang dapat dibaca.
+Challenge ini awalnya terlihat seperti membutuhkan *decompiler* atau *debugger* canggih, namun ternyata **flag dapat diekstrak secara langsung** menggunakan utilitas dasar Linux (`strings`).
+
+**Kerentanan:** *Flag* hardcoded dan tidak terenkripsi, disimpan sebagai *string* biasa di dalam segmen data biner.
+
+---
+
+## 🛠️ Langkah-Langkah Solusi (Writeup)
+
+### 1. Analisis Awal File
+
+Periksa jenis file dan arsitektur biner.
 
 ```bash
-strings chall 
-# Output-nya sangat panjang, karena ini biner Rust/Go (berdasarkan snippet)
+# Periksa jenis file
+$ file chall
+chall: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, ...
