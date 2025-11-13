@@ -1,0 +1,244 @@
+from itertools import permutations
+import re
+
+def caesar_decrypt(text, shift):
+    result = ""
+    for char in text:
+        if char.isalpha():
+            result += chr((ord(char) - 65 - shift) % 26 + 65) if char.isupper() else chr((ord(char) - 97 - shift) % 26 + 97)
+        else:
+            result += char
+    return result
+
+def vigenere_decrypt(text, key):
+    key = key.upper()
+    result = ""
+    key_index = 0
+    for char in text:
+        if char.isalpha():
+            shift = ord(key[key_index % len(key)]) - 65
+            result += chr((ord(char) - 65 - shift) % 26 + 65) if char.isupper() else chr((ord(char) - 97 - shift) % 26 + 97)
+            key_index += 1
+        else:
+            result += char
+    return result
+
+def affine_decrypt(text, a, b):
+    def mod_inverse(a, m):
+        for x in range(1, m):
+            if (a * x) % m == 1:
+                return x
+        return None
+    a_inv = mod_inverse(a, 26)
+    if a_inv is None:
+        return text
+    result = ""
+    for char in text:
+        if char.isalpha():
+            y = ord(char) - (65 if char.isupper() else 97)
+            x = (a_inv * (y - b)) % 26
+            result += chr(x + (65 if char.isupper() else 97))
+        else:
+            result += char
+    return result
+
+def rail_fence_decrypt(text, rails):
+    if rails <= 1:
+        return text
+    pattern = []
+    rail = 0
+    direction = 1
+    for i in range(len(text)):
+        pattern.append(rail)
+        rail += direction
+        if rail == 0 or rail == rails - 1:
+            direction *= -1
+    fence = [[] for _ in range(rails)]
+    index = 0
+    for r in range(rails):
+        for i in range(len(pattern)):
+            if pattern[i] == r:
+                fence[r].append(text[index])
+                index += 1
+    result = ""
+    rail = 0
+    direction = 1
+    for i in range(len(text)):
+        result += fence[rail].pop(0)
+        rail += direction
+        if rail == 0 or rail == rails - 1:
+            direction *= -1
+    return result
+
+def atbash_decrypt(text):
+    result = ""
+    for char in text:
+        if char.isalpha():
+            result += chr(90 - (ord(char) - 65)) if char.isupper() else chr(122 - (ord(char) - 97))
+        else:
+            result += char
+    return result
+
+def columnar_transposition_decrypt(text, key):
+    key = key.upper()
+    cols = len(key)
+    rows = len(text) // cols + (1 if len(text) % cols != 0 else 0)
+    key_order = sorted([(char, i) for i, char in enumerate(key)])
+    full_cols = len(text) % cols
+    col_lengths = [rows] * cols if full_cols == 0 else [rows] * full_cols + [rows - 1] * (cols - full_cols)
+    sorted_col_lengths = [col_lengths[original_idx] for _, original_idx in key_order]
+    grid = [[''] * cols for _ in range(rows)]
+    index = 0
+    for i, (_, col_idx) in enumerate(key_order):
+        for row in range(sorted_col_lengths[i]):
+            if index < len(text):
+                grid[row][col_idx] = text[index]
+                index += 1
+    result = ''.join([''.join(row) for row in grid])
+    return result.rstrip()
+
+def is_flag(text):
+    """Check if text looks like a valid flag"""
+    # Has FORESTY{ format
+    if "FORESTY{" in text and "}" in text:
+        return True
+    # Has multiple underscores
+    if text.count("_") >= 4:
+        return True
+    # Contains common CTF words
+    keywords = ["CYBER", "SECURITY", "FLAG", "KEY", "TRUST", "FORESTY", "CTF"]
+    count = sum(1 for word in keywords if word in text.upper())
+    if count >= 2:
+        return True
+    # Looks like readable English (common letters and patterns)
+    if re.search(r'\b(THE|AND|FOR|ARE|BUT|NOT|YOU|CAN|HER|WAS|ONE|OUR|OUT)\b', text.upper()):
+        return True
+    return False
+
+ciphertext = "GAHQCMCVFWJUAIDEISRZWTMUCUJUSFDMYIGP"
+
+print("=" * 80)
+print("ULTIMATE BRUTE FORCE - Testing specific promising combinations")
+print("=" * 80)
+
+# Define cipher types
+ciphers = [
+    ("Caesar", [3, 5, 7, 13, 19]),  # Most common shifts
+    ("Atbash", [None]),
+    ("RailFence", [3]),  # Hint says 3
+    ("Vigenere", ["FORESTY", "KEY"]),  # Based on hints
+    ("Affine", [(3, 5)]),  # Alpha-3, Bravo-5
+    ("Columnar", ["TRUST"]),  # Based on hints
+]
+
+# Since full permutation is too much (6! = 720), let's test specific orders
+# Based on hints: CAESAR, HASH, TRAFFIC, FORESTY, Alpha-Bravo, TRUST
+# Decrypt order should be reverse: TRUST, Alpha-Bravo, FORESTY, TRAFFIC, HASH, CAESAR
+
+promising_orders = [
+    # Exact reverse of hints
+    ["Columnar", "Affine", "Vigenere", "RailFence", "Atbash", "Caesar"],
+    # Swap last two
+    ["Columnar", "Affine", "Vigenere", "RailFence", "Caesar", "Atbash"],
+    # Atbash first
+    ["Atbash", "Columnar", "Affine", "Vigenere", "RailFence", "Caesar"],
+    # No Atbash, double Vigenere
+    ["Columnar", "Vigenere", "Affine", "Vigenere", "RailFence", "Caesar"],
+    # RailFence first
+    ["RailFence", "Columnar", "Affine", "Vigenere", "Atbash", "Caesar"],
+    # Caesar first
+    ["Caesar", "Columnar", "Affine", "Vigenere", "RailFence", "Atbash"],
+]
+
+found_flags = []
+
+for order_idx, order in enumerate(promising_orders):
+    print(f"\n{'=' * 80}")
+    print(f"Testing Order {order_idx + 1}: {' -> '.join(order)}")
+    print('=' * 80)
+    
+    # For each order, try different parameter combinations
+    # Generate combinations of parameters
+    if "Caesar" in order:
+        caesar_shifts = [3, 5, 7, 13, 19]
+    else:
+        caesar_shifts = [0]  # dummy
+    
+    if "Vigenere" in order:
+        vig_keys = ["FORESTY", "KEY"]
+    else:
+        vig_keys = ["FORESTY"]
+    
+    for caesar_shift in caesar_shifts:
+        for vig_key in vig_keys:
+            text = ciphertext
+            sequence = []
+            
+            for cipher_type in order:
+                if cipher_type == "Caesar":
+                    text = caesar_decrypt(text, caesar_shift)
+                    sequence.append(f"Caesar({caesar_shift})")
+                elif cipher_type == "Atbash":
+                    text = atbash_decrypt(text)
+                    sequence.append("Atbash")
+                elif cipher_type == "RailFence":
+                    text = rail_fence_decrypt(text, 3)
+                    sequence.append("RailFence(3)")
+                elif cipher_type == "Vigenere":
+                    text = vigenere_decrypt(text, vig_key)
+                    sequence.append(f"Vigenere({vig_key})")
+                elif cipher_type == "Affine":
+                    text = affine_decrypt(text, 3, 5)
+                    sequence.append("Affine(3,5)")
+                elif cipher_type == "Columnar":
+                    text = columnar_transposition_decrypt(text, "TRUST")
+                    sequence.append("Columnar(TRUST)")
+            
+            if is_flag(text):
+                print(f"\n*** POTENTIAL FLAG FOUND! ***")
+                print(f"Sequence: {' -> '.join(sequence)}")
+                print(f"Result: {text}")
+                found_flags.append((sequence, text))
+            elif any(word in text for word in ["FOREST", "TRUST", "CYBER"]):
+                print(f"Interesting result: {text} (contains keyword)")
+
+if found_flags:
+    print("\n" + "=" * 80)
+    print("SUMMARY - All potential flags found:")
+    print("=" * 80)
+    for seq, flag in found_flags:
+        print(f"\nSequence: {' -> '.join(seq)}")
+        print(f"Flag: {flag}")
+        print(f"Formatted: FORESTY{{{flag.lower()}}}")
+else:
+    print("\n" + "=" * 80)
+    print("No obvious flags found with these combinations.")
+    print("Try manual testing or ask for additional hints.")
+    print("=" * 80)
+    
+    # Last resort: print all intermediate results from most promising sequence
+    print("\nLast resort - showing ALL intermediate results from most promising order:")
+    print("Order: Columnar(TRUST) -> Affine(3,5) -> Vigenere(FORESTY) -> RailFence(3) -> Atbash -> Caesar(all)")
+    
+    text = ciphertext
+    text = columnar_transposition_decrypt(text, "TRUST")
+    print(f"After Columnar: {text}")
+    text = affine_decrypt(text, 3, 5)
+    print(f"After Affine: {text}")
+    text = vigenere_decrypt(text, "FORESTY")
+    print(f"After Vigenere: {text}")
+    text = rail_fence_decrypt(text, 3)
+    print(f"After RailFence: {text}")
+    text = atbash_decrypt(text)
+    print(f"After Atbash: {text}")
+    
+    print("\nAll Caesar shifts:")
+    for shift in range(26):
+        result = caesar_decrypt(text, shift)
+        print(f"  Caesar({shift:2d}): {result}")
+        # Try formatting each as flag
+        if len(result) == 36:
+            # Split 7-7-7-7-8
+            parts = [result[0:7], result[7:14], result[14:21], result[21:28], result[28:36]]
+            flag = "FORESTY{" + "_".join(parts).lower() + "}"
+            print(f"             As flag: {flag}")
