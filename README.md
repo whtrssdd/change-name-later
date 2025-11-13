@@ -1,37 +1,39 @@
-# 🚩 Arsip Solusi CTF
+# 🚩 Oprec Foresty 2025 CTF Writeups
 
-> Kumpulan solusi dan catatan untuk Capture The Flag (CTF) yang diselesaikan. Repositori ini berfungsi sebagai bank pengetahuan pribadi dan referensi untuk teknik *hacking* yang berbeda.
+[![Event Status](https://img.shields.io/badge/Event-Finished-success)]()
+[![Repository Type](https://img.shields.io/badge/Type-Writeup_Archive-blue)]()
+[![Team/Player](https://img.shields.io/badge/Player-YourUsername-orange)]()
 
-## 📖 Daftar Isi
-
-1.  [Daftar Event CTF](#🏆-daftar-event-ctf)
-2.  [Struktur Folder](#📁-struktur-folder)
-3.  [Cara Navigasi](#🔍-cara-navigasi)
+> This repository archives all my solutions, scripts, and notes for the Capture The Flag (CTF) challenges from the **Open Recruitment Foresty 2025** event.
 
 ---
 
-## 🏆 Daftar Event CTF
+## 🏆 Summary of Results
 
-| Event CTF | Tahun | Kategori yang Diselesaikan | Jumlah Solusi |
-| :--- | :--- | :--- | :--- |
-| **Foresty CTF** | 2024 | Reverse, Pwn, Crypto | 5 Challenges |
-| **PicoCTF** | 2023 | Web, Forensics | 8 Challenges |
-| **...** | ... | ... | ... |
-
----
-
-## 📁 Struktur Folder
-
-Setiap challenge disimpan di folder terpisah dengan format: `[NAMA_CTF_EVENT]/[KATEGORI]/[NAMA_CHALLENGE]`.
-
-Setiap folder challenge berisi:
--   **File Challenge Asli:** (*e.g., chall.bin, web.zip, encrypted.txt*)
--   **README.md:** Penjelasan langkah-langkah solusi, teknik, dan kerentanan.
--   **PoC/Script:** (*e.g., solve.py, exploit.c*)
--   **Catatan:** (*e.g., notes.txt, output_log.txt*)
+| Statistic | Value |
+| :--- | :--- |
+| **Total Challenges Solved** | X / XX |
+| **Total Points Scored** | XXXX |
+| **Final Ranking** | #[Your Rank] |
+| **Duration** | [e.g., 48 hours] |
 
 ---
 
-## 🔍 Cara Navigasi
+## 📁 Category Index
 
-Lihat *branch* utama atau gunakan pencarian untuk menemukan *challenge* berdasarkan nama atau *keyword* kategori.
+The challenges are organized by their original CTF category. Click on the category name to see the full index of writeups within that group.
+
+| Category | Folder Path | Challenges Solved | Total Points (Initial) | Completion Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **FORENSIC** | [`FORENSIC/`](FORENSIC/README.md) | X / 6 | XXXX | [0-100]% |
+| **REVERSE ENGINEERING** | [`REVERSE_ENGINEERING/`](REVERSE_ENGINEERING/README.md) | X / X | XXXX | [0-100]% |
+| **PWN** | [`PWN/`](PWN/README.md) | X / X | XXXX | [0-100]% |
+| **WEB** | [`WEB/`](WEB/README.md) | X / X | XXXX | [0-100]% |
+| **CRYPTO** | [`CRYPTO/`](CRYPTO/README.md) | X / X | XXXX | [0-100]% |
+| **MISC** | [`MISC/`](MISC/README.md) | X / X | XXXX | [0-100]% |
+
+---
+
+## 🏗️ Repository Structure
+
+Each challenge category has a dedicated folder containing its own `README.md` index and sub-folders for individual challenge writeups.
