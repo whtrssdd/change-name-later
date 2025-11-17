@@ -3,7 +3,7 @@
 <br>
 
 <div style="
-    background:#000000;
+    background:#ffffffff;
     width:450px;
     padding:25px;
     border-radius:12px;
@@ -33,3 +33,4 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 <br><br>
 
 </div>
+
