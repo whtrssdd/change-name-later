@@ -26,3 +26,6 @@ A small Go program asks for a password, but instead of storing it directly, it r
 </td>
 </tr>
 </table>
+
+
+Solver here
