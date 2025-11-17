@@ -1,3 +1,0 @@
-di soal, ada expand hidden, isi nya hex
-unrelated ni aga bingung dikit, singkat cerita ketemu web https://libraryofbabel.info/
-terus nanti masukin hex n kawan kawan, flag ada di tengah tengah teks
