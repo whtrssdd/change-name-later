@@ -20,10 +20,11 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 <dl>
 <dd>
 <p>
-<strong>Author:</strong> YourNameHere
+<strong>Author:</strong> -
 </p>
 </dl>
 
 </td>
 </tr>
 </table>
+
