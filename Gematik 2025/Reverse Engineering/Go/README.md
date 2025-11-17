@@ -4,8 +4,8 @@
 
 <div align="center">
 
-## **Go**
-### **500 Points**
+<strong><strong>Go</strong></strong><br>
+<strong>500 Points</strong>
 
 </div>
 <dl>
@@ -27,4 +27,5 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 </td>
 </tr>
 </table>
+
 
