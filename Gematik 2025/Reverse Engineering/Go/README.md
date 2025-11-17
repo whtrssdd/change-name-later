@@ -1,4 +1,4 @@
-<table align="center">
+<table align="center" cellpadding="12">
 <tr>
 <td width="500">
 
@@ -22,4 +22,5 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 </td>
 </tr>
 </table>
+
 
