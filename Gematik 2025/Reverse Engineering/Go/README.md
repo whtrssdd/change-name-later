@@ -1,6 +1,6 @@
 <div align="center">
 
-<div style="width: 420px; border: 1px solid #ccc; border-radius: 12px; padding: 15px;">
+<div style="width: 110px; border: 1px solid #ccc; border-radius: 12px; padding: 15px;">
 
 ## <strong>Go</strong>
 ### <strong>230 Points</strong>
@@ -17,3 +17,4 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 
 </div>
 </div>
+
