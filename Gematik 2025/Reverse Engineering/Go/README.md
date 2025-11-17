@@ -2,8 +2,10 @@
 <tr>
 <td width="500">
 <div align="center">
+  
 ## **Go**
 ### **230 Points**
+
 </div>
 <dd>
 <p align="justify">
@@ -17,3 +19,4 @@ A small Go program asks for a password, but instead of storing it directly, it r
 </td>
 </tr>
 </table>
+
