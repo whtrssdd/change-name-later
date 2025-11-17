@@ -1,4 +1,4 @@
-<table align="center" width="400" cellpadding="12">
+<table align="center" width="400" cellpadding="12" border="1">
 <tr>
 <td>
 
