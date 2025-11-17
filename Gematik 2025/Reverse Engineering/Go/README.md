@@ -1,8 +1,13 @@
+<table align="center">
+<tr>
+<td width="400">
+
 <div align="center">
 
+## **Go**
+### **230 Points**
 
-## <strong>Go</strong>
-### <strong>230 Points</strong>
+</div>
 
 <p align="justify">
 A small Go program asks for a password, but instead of storing it directly,
@@ -12,9 +17,8 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 
 <br>
 
-<strong>Author:</strong> YourNameHere
+**Author:** YourNameHere
 
-</div>
-</div>
-
-
+</td>
+</tr>
+</table>
