@@ -1,6 +1,6 @@
 <div align="center">
 
-<table>
+<table width="500">
 <tr><td>
 
 <div align="center">
@@ -10,11 +10,11 @@
 
 </div>
 
-<div>
-
-<p align="justify"> A small Go program asks for a password, but instead of storing it directly,  it rebuilds it using a custom pseudo-random generator. The flag is mixed, XORed, and left behind as encrypted bytes inside the binary. </p>
-
-</div>
+<p align="justify">
+A small Go program asks for a password, but instead of storing it directly,
+it rebuilds it using a custom pseudo-random generator.
+The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
+</p>
 
 <br>
 
@@ -24,5 +24,3 @@
 </table>
 
 </div>
-
-
