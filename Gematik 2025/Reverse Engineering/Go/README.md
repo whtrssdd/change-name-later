@@ -3,8 +3,8 @@
 <td width="500">
 
 <div align="center">
-
-<strong><strong>Go</strong></strong><br>
+<h1><strong><strong>Go</strong></strong></h1>
+<br>
 <strong>500 Points</strong>
 
 </div>
@@ -27,5 +27,6 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 </td>
 </tr>
 </table>
+
 
 
