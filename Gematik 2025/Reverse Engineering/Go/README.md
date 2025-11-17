@@ -1,6 +1,6 @@
 <table align="center">
 <tr>
-<td width="400">
+<td width="500">
 
 <div align="center">
 
@@ -22,3 +22,4 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 </td>
 </tr>
 </table>
+
