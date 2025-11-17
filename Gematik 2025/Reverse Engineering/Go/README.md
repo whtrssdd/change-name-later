@@ -18,7 +18,10 @@ The flag is mixed, XORed, and left behind as encrypted bytes inside the binary.
 
 **Author:** -
 
+<br>
+
 </td></tr>
 </table>
 
 </div>
+
