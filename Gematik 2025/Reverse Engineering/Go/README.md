@@ -26,11 +26,12 @@ A small Go program asks for a password, but instead of storing it directly, it r
 </td>
 </tr>
 </table>
-<strong>Analysis and Solution Steps: </strong>
+<strong>Analysis and Solution Steps :</strong>
 <br>
 <br>
 <strong>Flag :</strong>
 <br>
 <strong>Gematik2025{K3l4s_K1nK_K0k_B1s4_S0lp_Sih???}</strong>
+
 
 
