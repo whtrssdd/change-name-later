@@ -43,3 +43,5 @@ A chess bot modeled after Magnus Carlsen responds with uncanny precision, repeat
 <strong>Flag :</strong>
 <br>
 <strong>Gematik2025{M4gnus_N0_L0nger_Hum4n_100_Move_Brut4l!}</strong>
+
+
