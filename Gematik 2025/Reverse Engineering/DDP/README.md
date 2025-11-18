@@ -27,7 +27,7 @@ Kemarin kamu belajar DDP dan mencoba bikin kalkulator sederhana. Tapi hasilnya m
 <dl>
 <dd>
 
-[`chall.exe`](linkfile)
+[`chall.exe`](https://github.com/whtrssdd/change-name-later/blob/main/Gematik%202025/Reverse%20Engineering/DDP/chall.exe)
 
 </dd>
 
@@ -42,4 +42,4 @@ Kemarin kamu belajar DDP dan mencoba bikin kalkulator sederhana. Tapi hasilnya m
 <br>
 <strong>Flag :</strong>
 <br>
-<strong></strong>
+<strong>Gematik2025{Izin_puhh_challnya_easy_kan_ya???}</strong>
