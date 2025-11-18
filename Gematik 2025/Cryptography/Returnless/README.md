@@ -26,8 +26,10 @@ Di tengah malam H-5, sebuah enkripsi lahir dari kopi dingin dan kode lelah. Fung
 
 <dl>
 <dd>
-  
-`main.py` `output.txt`
+
+[`main.py`](https://example.com/file1)
+[`output.txt`](https://example.com/file1)
+
 </dd>
 
 </dl>
@@ -42,4 +44,5 @@ Di tengah malam H-5, sebuah enkripsi lahir dari kopi dingin dan kode lelah. Fung
 <strong>Flag :</strong>
 <br>
 <strong>Gematik2025{SlE3p_Is_FoR_ThE_WeAk_PyThOn_ReTuRn_Is_OpTiOnAl_SePeRtI_TiDuRkU_H3he}</strong>
+
 
