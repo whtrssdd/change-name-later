@@ -27,8 +27,8 @@ Di tengah malam H-5, sebuah enkripsi lahir dari kopi dingin dan kode lelah. Fung
 <dl>
 <dd>
 
-[`main.py`](https://github.com/whtrssdd/change-name-later/blob/main/Gematik%202025/Cryptography/Returnless/main.py)
-[`output.txt`](https://github.com/whtrssdd/change-name-later/blob/main/Gematik%202025/Cryptography/Returnless/output.txt)
+[`main.py`](main.py)
+[`output.txt`](output.txt)
 
 </dd>
 
@@ -44,6 +44,7 @@ Di tengah malam H-5, sebuah enkripsi lahir dari kopi dingin dan kode lelah. Fung
 <strong>Flag :</strong>
 <br>
 <strong>Gematik2025{SlE3p_Is_FoR_ThE_WeAk_PyThOn_ReTuRn_Is_OpTiOnAl_SePeRtI_TiDuRkU_H3he}</strong>
+
 
 
 
