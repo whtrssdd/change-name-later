@@ -27,7 +27,7 @@ A full-day access log looks perfectly ordinary at first glance—routine browsin
 <dl>
 <dd>
 
-[`access.zip`](https://github.com/whtrssdd/change-name-later/blob/main/Gematik%202025/Forensics/Little/access.zip)
+[`access.zip`](access.zip)
 
 </dd>
 
