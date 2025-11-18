@@ -27,7 +27,7 @@ A chess bot modeled after Magnus Carlsen responds with uncanny precision, repeat
 <dl>
 <dd>
 
-[`chess`](linkfile)
+[`chess`](chess)
 
 </dd>
 
