@@ -27,7 +27,7 @@ In a world where ancient incantations intertwine with modern algorithms, a forgo
 <dl>
 <dd>
 
-[`Dist.zip`](https://github.com/whtrssdd/change-name-later/blob/main/Gematik%202025/Cryptography/Aesura/Dist.zip)
+[`Dist.zip`](Dist.zip)
 
 </dd>
 
@@ -43,6 +43,7 @@ In a world where ancient incantations intertwine with modern algorithms, a forgo
 <strong>Flag :</strong>
 <br>
 <strong>Gematik2025{Cihuyyyy_eLRXxFbjiDXvC9i8gnLM80pLKentW1U0qNVJOw6j3SbGvKV0}</strong>
+
 
 
 
