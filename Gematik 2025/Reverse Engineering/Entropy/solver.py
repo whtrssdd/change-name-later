@@ -15,4 +15,3 @@ for byte in enc:
     flag.append(byte ^ (seed & 0xFF))
 
 print(flag.decode())
- 
