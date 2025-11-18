@@ -27,7 +27,7 @@ Waktu mencoba bermain-main dengan generator pseudo random, sebuah eksperimen kec
 <dl>
 <dd>
 
-[`chall`](https://github.com/whtrssdd/change-name-later/blob/main/Gematik%202025/Reverse%20Engineering/Entropy/chall)
+[`chall`](chall)
 
 </dd>
 
